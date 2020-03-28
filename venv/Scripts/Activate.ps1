@@ -27,7 +27,7 @@ function global:deactivate ([switch]$NonDestructive) {
 
 deactivate -nondestructive
 
-$env:VIRTUAL_ENV="C:\Users\codel\Desktop\Projects for GIT\flask_blueprint\venv"
+$env:VIRTUAL_ENV="C:\Users\codel\Desktop\Projects for GIT\flask_webview\venv"
 
 if (! $env:VIRTUAL_ENV_DISABLE_PROMPT) {
     # Set the prompt to include the env name
