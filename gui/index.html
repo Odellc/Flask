@@ -26,12 +26,6 @@
     <div id="stuff-container"></div>
     <div id="json-container"></div>
 
-    <!-- <div style="text-align: center; margin-top: 50px;">
-        <a href="http://mbsy.co/gHVfC" target="_blank" style="outline:none;border:none;" onclick="openLink(event)">
-            <img src="https://ambassador-api.s3.amazonaws.com/uploads/marketing/11948/2016_11_29_21_53_43.png" alt="DreamHost" border="0"
-            />
-        </a>
-    </div> -->
 
     <input id="num_one" type="text" />
     <input id="num_two" type="text" />
@@ -135,21 +129,21 @@
             doAjax("/open-url", "POST", false, request)
         }
 
-        // From https://gist.github.com/dharmavir/936328
-        function getHttpRequestObject() {
-            // Define and initialize as false
-            var xmlHttpRequst = false;
+        // // From https://gist.github.com/dharmavir/936328
+        // function getHttpRequestObject() {
+        //     // Define and initialize as false
+        //     var xmlHttpRequst = false;
 
-            // Mozilla/Safari/Non-IE
-            if (window.XMLHttpRequest) {
-                xmlHttpRequst = new XMLHttpRequest();
-            }
-            // IE
-            else if (window.ActiveXObject) {
-                xmlHttpRequst = new ActiveXObject("Microsoft.XMLHTTP");
-            }
-            return xmlHttpRequst;
-        }
+        //     // Mozilla/Safari/Non-IE
+        //     if (window.XMLHttpRequest) {
+        //         xmlHttpRequst = new XMLHttpRequest();
+        //     }
+        //     // IE
+        //     else if (window.ActiveXObject) {
+        //         xmlHttpRequst = new ActiveXObject("Microsoft.XMLHTTP");
+        //     }
+        //     return xmlHttpRequst;
+        // }
 
         // Does the AJAX call to URL specific with rest of the parameters
         function doAjax(url, method, responseHandler, data) {
