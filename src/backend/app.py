@@ -1,8 +1,6 @@
 """
 Application stub
 """
-
-
 def initialize():
     # perform heavy stuff here
     return True
