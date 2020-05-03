@@ -17,7 +17,6 @@ if not os.path.exists(gui_dir):  # frozen executable path
 server = Flask(__name__, static_folder=gui_dir, template_folder=gui_dir)
 server.config['SEND_FILE_MAX_AGE_DEFAULT'] = 1  # disable caching
 
-
 def verify_token(function):
     @wraps(function)
     def wrapper(*args, **kwargs):
@@ -30,12 +29,10 @@ def verify_token(function):
 
     return wrapper
 
-
 @server.after_request
 def add_header(response):
     response.headers['Cache-Control'] = 'no-store'
     return response
-
 
 @server.route('/')
 def landing():
