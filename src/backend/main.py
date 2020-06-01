@@ -13,6 +13,7 @@ logger = logging.getLogger(__name__)
 
 def url_ok(url, port):
     # Use httplib on Python 2
+    #don't use
     try:
         from http.client import HTTPConnection
     except ImportError:
